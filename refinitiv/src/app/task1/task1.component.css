@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    overflow-y: auto;
+}
+
+div.container div {
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.input {
+    width : 200px
+}
+
+.dropdown {
+    width: 100%;
+    min-width: 100px;
+}
+
+.result {
+    width: 300px;
+}
