@@ -1,13 +1,15 @@
 <h1 style="margin:80px 0 20px 0">TASK 1</h1>
 <div class="container">
     <div class="input">
-        <input type="number" placeholder="please input number">
+        <form [formGroup]="myForm">
+            <input formControlName="amount" placeholder="please input number" type="number">
+        </form>
     </div>
     <div class="dropdown">
-        <select>
+        <select (change)="onDropdownChange($event)">
             <option value="isPrime">isPrime</option>
             <option value="isFibonacci">isFibonacci</option>
         </select>
     </div>
-    <div class="result">TEST</div>
+    <div class="result">{{result}}</div>
 </div>
